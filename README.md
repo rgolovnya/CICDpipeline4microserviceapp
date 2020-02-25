@@ -1,7 +1,7 @@
 # CICDpipeline4microserviceapp
 Develop a CI/CD pipeline for micro services applications with blue/green deployment.
 
-## Steps in Completing Your Project
+## Steps in Completing this Project
 
 Step 1: Propose and Scope the Project
 
