@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 390102656945.dkr.ecr.us-west-2.amazonaws.com/cicdpipeline:latest
+        image: 390102656945.dkr.ecr.us-west-2.amazonaws.com/cicdpipelineapp:latest
         ports:
         - containerPort: 80

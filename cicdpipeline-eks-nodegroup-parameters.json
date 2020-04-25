@@ -1,15 +1,15 @@
 [
     {
     "ParameterKey": "ClusterName",
-    "ParameterValue": "cicdpipeline"
+    "ParameterValue": "cicdpipelineapp"
     },
     {
     "ParameterKey": "VpcId",
-    "ParameterValue": "vpc-0a63da84c66bc8aa4"
+    "ParameterValue": "vpc-0770e1b782b603972"
     },
     {
     "ParameterKey": "ClusterControlPlaneSecurityGroup",
-    "ParameterValue": "sg-05b4088a738dde331"
+    "ParameterValue": "sg-08e243403a8447d95"
     },
     {
         "ParameterKey": "NodeGroupName",
@@ -21,10 +21,10 @@
     },
     {
         "ParameterKey": "Subnets",
-        "ParameterValue": "subnet-0747aabd78c637c33,subnet-0ff407e8fe08c4e7f,subnet-01f41921073113af3"
+        "ParameterValue": "subnet-03ffffe0d6e23240f,subnet-071c9219ece0a1d09,subnet-028ceedbaf26db03d"
     },
     {
         "ParameterKey": "KeyName",
-        "ParameterValue": "test-con"
+        "ParameterValue": "keypair"
     }
 ]
