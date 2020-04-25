@@ -14,7 +14,7 @@ pipeline {
     stage('Push docker image to ECR') {
       steps {
         script {
-          docker.withRegistry("https://390102656945.dkr.ecr.eu-west-1.amazonaws.com/cicdpipeline4microserviceapp", "ecr:eu-west-1:deploy") { docker.image("cicdpipelineapp").push() }
+          docker.withRegistry("https://390102656945.dkr.ecr.us-west-2.amazonaws.com/cicdpipelineapp", "ecr:us-west-2:deploy") { docker.image("cicdpipelineapp").push() }
         }
       }
     }
