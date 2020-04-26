@@ -1,7 +1,7 @@
-# Final project of Udacity Devops Nanodegree
+# Final project of Udacity DevOps Nanodegree
 
 ## Project Description
-Develop a CICD pipeline for microservice application with rolling deployment. Start with a linting check, built Docker container, push the built Docker conatiner to the Docker repositiry, and then deploy these Docker container to a Kubernetes cluster.
+Develop a CICD pipeline for microservice application with rolling deployment. Start with a linting check, built Docker container, push the built Docker container to the Amazon Elastic Container Registry ECR, and then deploy these Docker container to a Kubernetes cluster.
 
 ## Learning Objectives
 - Setting up Jenkins
@@ -23,7 +23,7 @@ Develop a CICD pipeline for microservice application with rolling deployment. St
 
 - Lauch a AWS EC2 instance  AMI: Ubuntu Server 18.04 LTS  t2.medium
 
-![AWSEC2Jenkins](Images/AWSEC2Jenkins.PNG)
+![AWSEC2Jenkins](Images/1AWSEC2Jenkins.PNG)
 
 - Install required dependencies
 - Jenkins and required plugins in Jenkins (Blue Ocean, Pipeline AWS steps, Amazon ECR)
@@ -42,7 +42,7 @@ Develop a CICD pipeline for microservice application with rolling deployment. St
 
 Jenkins pipeline Build stage failed. 
 
-![JenkinsFailedpipeline](Images/JenkinsFailedpipeline.PNG)
+![JenkinsFailedpipeline](Images/2JenkinsFailedpipeline.PNG)
 
 
 
