@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'docker build --tag=cicdpipelineapp'
+        sh 'docker build --tag=cicdpipelineapp .'
       }
     }
   }
