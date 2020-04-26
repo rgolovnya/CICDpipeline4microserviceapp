@@ -90,5 +90,9 @@ The web application is a simple static site running in an nginx container exposi
 
 ![Nginx](Images/9Nginx.PNG)
 
+http://34.216.106.187:8080/blue/organizations/jenkins/CICD-pipeline-app/detail/master/1/pipeline
+
+
+
 
 
