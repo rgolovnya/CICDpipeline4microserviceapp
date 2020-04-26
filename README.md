@@ -75,11 +75,11 @@ kubectl apply -f nginx-service.yaml
 kubectl get svc nginx -o yaml
 ```
 
-6: Details of nginx web app in the Kubernetes cluster. 
+6: Details of deployed nginx web app in the Kubernetes cluster. 
 
 ![DetailsKubeCluster](Images/8DetailsKubeCluster.PNG)
 
-7: Deployed web application
+7: Testing deployed web application
 
 The web application is a simple static site running in an nginx container exposing port 80.
 
