@@ -44,13 +44,46 @@ Jenkins pipeline Build stage failed.
 
 ![JenkinsFailedpipeline](Images/2JenkinsFailedpipeline.PNG)
 
-
+Jenkins pipeline Build stage Passed.
+![JenkinsPassedpipeline](Images/3JenkinsPassedpipeline.PNG)
 
 4: Build Kubernetes cluster.
-- Use CloudFormation to build 'infrastructure'; i.e., the Kubernetes Cluster.
-- Initialise Kubernetes cluster
+
+- Docker image in ECR
+
+![DockerImageECR](Images/4DockerImageECR.PNG)
+
+- Kubernetes Cluster EKS in EKS
+
+![KubernetesClusterEKS](Images/5KubernetesClusterEKS.PNG)
+
+- CloudFormations to build Kubernetes Cluster, Configure worker nodes.
+
+![CloudFormation](Images/6CloudFormation.PNG)
 
 
-5: Results - deployed web application
-The application is a simple static site running in an nginx container exposing port 80.
+- Three EC2 - worker nodes created
+
+![ThreeWorkerNodes](Images/7ThreeWorkerNodes.PNG)
+
+
+5: Launching nginx web app inside the Kubernetes cluster
+
+```
+kubectl apply -f nginx.yaml
+kubectl apply -f nginx-service.yaml
+kubectl get svc nginx -o yaml
+```
+
+6: Details of nginx web app in the Kubernetes cluster. 
+
+![DetailsKubeCluster](Images/8DetailsKubeCluster.PNG)
+
+7: Deployed web application
+
+The web application is a simple static site running in an nginx container exposing port 80.
+
+![Nginx](Images/9Nginx.PNG)
+
+
 
