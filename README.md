@@ -45,6 +45,11 @@ Jenkins pipeline Build stage failed.
 ![JenkinsFailedpipeline](Images/2JenkinsFailedpipeline.PNG)
 
 Jenkins pipeline Build stage Passed.
+
+Code is checked against a linter as part of a Continuous Integration step. 
+
+The project takes a Dockerfile and creates a Docker container in the pipeline.
+
 ![JenkinsPassedpipeline](Images/3JenkinsPassedpipeline.PNG)
 
 4: Build Kubernetes cluster.
