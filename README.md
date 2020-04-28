@@ -40,36 +40,44 @@ Develop a CICD pipeline for microservice application with rolling deployment. St
 - Set up all the steps that your pipeline will include.
 - Configure a pipeline.
 
-Jenkins pipeline Build stage failed. 
+Jenkins pipeline Build stage failed.
 
 ![JenkinsFailedpipeline](Images/2JenkinsFailedpipeline.PNG)
 
 Jenkins pipeline Build stage Passed.
 
-Code is checked against a linter as part of a Continuous Integration step. 
+Code is checked against a linter as part of a Continuous Integration step.
 
 The project takes a Dockerfile and creates a Docker container in the pipeline.
 
 ![JenkinsPassedpipeline](Images/3JenkinsPassedpipeline.PNG)
 
+Docker container pushed to dockerhub.
+
+![JenkinsPassedDockerPush](Images/4JenkinsPassedDockerPush.PNG)
+
+
 4: Build Kubernetes cluster.
 
 - Docker image in ECR
 
-![DockerImageECR](Images/4DockerImageECR.PNG)
+![DockerImageECR](Images/5DockerImageECR.PNG)
 
 - Kubernetes Cluster EKS in EKS
 
-![KubernetesClusterEKS](Images/5KubernetesClusterEKS.PNG)
+![KubernetesClusterEKS](Images/6KubernetesClusterEKS.PNG)
 
 - CloudFormations to build Kubernetes Cluster, Configure worker nodes.
 
-![CloudFormation](Images/6CloudFormation.PNG)
+![CloudFormation](Images/7CloudFormation.PNG)
 
+- Kubernetes status of created nodes
+
+![KubeCreatedNodes](Images/8KubeCreatedNodes.PNG)
 
 - Three EC2 - worker nodes created
 
-![ThreeWorkerNodes](Images/7ThreeWorkerNodes.PNG)
+![ThreeWorkerNodes](Images/9ThreeWorkerNodes.PNG)
 
 
 5: Launching nginx web app inside the Kubernetes cluster
@@ -80,19 +88,14 @@ kubectl apply -f nginx-service.yaml
 kubectl get svc nginx -o yaml
 ```
 
-6: Details of deployed nginx web app in the Kubernetes cluster. 
+6: Details of deployed nginx web app in the Kubernetes cluster.
 
-![DetailsKubeCluster](Images/8DetailsKubeCluster.PNG)
+![DetailsKubeCluster](Images/10DetailsKubeCluster.PNG)
 
 7: Testing deployed web application
 
 The web application is a simple static site running in an nginx container exposing port 80.
 
-![Nginx](Images/9Nginx.PNG)
+![Nginx](Images/11Nginx.PNG)
 
 http://34.216.106.187:8080/blue/organizations/jenkins/CICD-pipeline-app/detail/master/1/pipeline
-
-
-
-
-
